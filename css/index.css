@@ -184,6 +184,67 @@ img:hover {
     line-height: 1.8;
 }
 
+/* Boutons section Accueil avec icônes */
+.accueil-buttons {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-accueil {
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.1rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-accueil::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #667eea 0%, #0A0344 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+/* Icônes */
+.btn-icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.btn-contact-accueil {
+    background: linear-gradient(135deg, #4299e1 0%, #667eea 100%);
+    color: white;
+    border: none;
+    box-shadow: 0 8px 25px rgba(66, 153, 225, 0.4);
+}
+
+.btn-contact-accueil:hover .btn-icon {
+    transform: translateY(-2px);
+}
+
+.btn-contact-accueil:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(66, 153, 225, 0.5);
+}
+
 /* Grille de compétences */
 .skills-container {
     display: grid;
