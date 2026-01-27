@@ -245,6 +245,33 @@ img:hover {
     box-shadow: 0 15px 35px rgba(66, 153, 225, 0.5);
 }
 
+.btn-cv-accueil {
+    background: white;
+    color: #2d3748;
+    border: 2px solid #667eea;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-cv-accueil::before {
+    background: linear-gradient(135deg, #667eea 0%, #0A0344 100%);
+}
+
+.btn-cv-accueil:hover .btn-icon {
+    transform: translateY(2px);
+}
+
+.btn-cv-accueil:hover {
+    color: white;
+    border-color: transparent;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.btn-cv-accueil:hover::before {
+    opacity: 1;
+}
+
 /* Grille de compétences */
 .skills-container {
     display: grid;
